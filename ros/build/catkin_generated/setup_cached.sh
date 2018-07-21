@@ -7,7 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/user/Abdou/CarND-Term3/CarND-Capstone/ros/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/user/Abdou/CarND-Term3/CarND-Capstone/ros/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/user/Abdou/CarND-Term3/CarND-Capstone/ros/devel/share/common-lisp"
+export PWD="/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/build"
 export ROS_PACKAGE_PATH="/home/user/Abdou/CarND-Term3/CarND-Capstone/ros/src:$ROS_PACKAGE_PATH"

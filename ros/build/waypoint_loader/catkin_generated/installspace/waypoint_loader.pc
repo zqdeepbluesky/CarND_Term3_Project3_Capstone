@@ -1,8 +1,8 @@
-prefix=/home/user/Abdou/CarND-Term3/CarND-Capstone/ros/install
+prefix=/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/install
 
 Name: waypoint_loader
 Description: Description of waypoint_loader
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/user/Abdou/CarND-Term3/CarND-Capstone/ros/install/lib 
+Libs: -L/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/install/lib 
 Requires: 
