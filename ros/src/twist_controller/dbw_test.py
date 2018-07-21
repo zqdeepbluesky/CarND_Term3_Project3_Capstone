@@ -12,7 +12,7 @@ from dbw_mkz_msgs.msg import ThrottleCmd, SteeringCmd, BrakeCmd, SteeringReport
 You can use this file to test your DBW code against a bag recorded with a reference implementation.
 The bag can be found at https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/files/reference.bag.zip
 
-To use the downloaded bag file, rename it to 'dbw_test.rosbag.bag' and place it in the CarND-Capstone/data folder.
+To use the downloaded bag file, rename it to 'dbw_test.rosbag.bag' and place it in the CarND_Term3_Project3_Capstone/data folder.
 Then with roscore running, you can then use roslaunch with the dbw_test.launch file found in 
 <project_repo>/ros/src/twist_controller/launch.
 

@@ -8,4 +8,4 @@
 
 # modified environment variables
 export PWD="/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/build"
-export ROS_PACKAGE_PATH="/home/user/Abdou/CarND-Term3/CarND-Capstone/ros/src:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/src:/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/src:/opt/ros/kinetic/share"
