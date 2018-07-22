@@ -49,7 +49,7 @@ class WaypointUpdater(object):
         self.base_waypoints = None
         self.waypoint_tree = None
         self.base_lane = None
-        self.stopline_wp_idx = None
+        self.stopline_wp_idx = -1
 
 
         #rospy.spin()
@@ -102,7 +102,7 @@ class WaypointUpdater(object):
         farthest_idx = closest_idx + LOOKAHEAD_WPS
         base_waypoints = self.base_lane.waypoints[closest_idx:farthest_idx]
 
-        if self.stopline_wp_idx == -1 or self.stopline_wp_idx >= farthest_idx:
+        if (self.stopline_wp_idx == -1) or (self.stopline_wp_idx >= farthest_idx):
             lane.waypoints = base_waypoints
         else:
             lane.waypoints = self.decelerate_waypoints(base_waypoints, closest_idx)
@@ -115,13 +115,16 @@ class WaypointUpdater(object):
             p = Waypoint()
             p.pose = wp.pose
 
+            print()
+            print("info: ", self.stopline_wp_idx, closest_idx)
+            print()
             stop_idx = max(self.stopline_wp_idx - closest_idx - 2, 0) # In order to avoid the center of the car be on the traffic line
             dist = self.distance(waypoints, i, stop_idx)
             vel = math.sqrt(2 * MAX_DECEL * dist)
             if vel < 1.0:
                 vel = 0.0
 
-            p.twist.twist.linear.x = min(vel, wp.twist.twisy.linear.x)
+            p.twist.twist.linear.x = min(vel, wp.twist.twist.linear.x)
             temp.append(p)
 
         return temp
@@ -134,7 +137,7 @@ class WaypointUpdater(object):
 
     def waypoints_cb(self, waypoints):
         # TODO: Implement
-        self.base_waypoints = waypoints
+        self.base_lane = waypoints
         if not self.waypoints_2d:
             self.waypoints_2d = [[waypoint.pose.pose.position.x, waypoint.pose.pose.position.y] for waypoint in waypoints.waypoints]
             self.waypoint_tree = KDTree(self.waypoints_2d)
