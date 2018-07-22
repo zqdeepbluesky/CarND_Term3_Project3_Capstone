@@ -17,7 +17,7 @@ Please use **one** of the two installation options, either native **or** docker 
   * [ROS Indigo](http://wiki.ros.org/indigo/Installation/Ubuntu) if you have Ubuntu 14.04.
 * [Dataspeed DBW](https://bitbucket.org/DataspeedInc/dbw_mkz_ros)
   * Use this option to install the SDK on a workstation that already has ROS installed: [One Line SDK Install (binary)](https://bitbucket.org/DataspeedInc/dbw_mkz_ros/src/81e63fcc335d7b64139d7482017d6a97b405e250/ROS_SETUP.md?fileviewer=file-view-default)
-* Download the [Udacity Simulator](https://github.com/udacity/CarND-Capstone/releases).
+* Download the [Udacity Simulator](https://github.com/udacity/CarND_Term3_Project3_Capstone/releases).
 
 ### Docker Installation
 [Install Docker](https://docs.docker.com/engine/installation/)
@@ -39,12 +39,12 @@ To set up port forwarding, please refer to the [instructions from term 2](https:
 
 1. Clone the project repository
 ```bash
-git clone https://github.com/udacity/CarND-Capstone.git
+git clone https://github.com/udacity/CarND_Term3_Project3_Capstone.git
 ```
 
 2. Install python dependencies
 ```bash
-cd CarND-Capstone
+cd CarND_Term3_Project3_Capstone
 pip install -r requirements.txt
 ```
 3. Make and run styx
@@ -68,7 +68,7 @@ rosbag play -l traffic_light_bag_file/traffic_light_training.bag
 ```
 4. Launch your project in site mode
 ```bash
-cd CarND-Capstone/ros
+cd CarND_Term3_Project3_Capstone/ros
 roslaunch launch/site.launch
 ```
 5. Confirm that traffic light detection works on real life images
