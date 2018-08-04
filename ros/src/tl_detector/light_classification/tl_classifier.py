@@ -37,6 +37,8 @@ class TLClassifier(object):
         """
         #TODO implement light color prediction
         predictions = self.__predict(image)
+        # print("Predictions: ", predictions)
+        # print ("Final decision: ", self.__model_indexes_to_styx_msgs_index(predictions))
         return self.__model_indexes_to_styx_msgs_index(predictions)
 
     def __load_graph(self, model_file):
@@ -76,19 +78,24 @@ class TLClassifier(object):
     def __model_indexes_to_styx_msgs_index(self, predictions):
         labels = ['green', 'none', 'red', 'yellow']
         max_index = np.argmax(predictions)
+        # print("Max index: ", max_index)
         best_label = labels[max_index]
 
-        rospy.logdebug(best_label)
+        #rospy.logdebug(best_label)
 
         if best_label == 'green':
+            # print("Green")
             return TrafficLight.GREEN
 
         if best_label == "red":
+            # print("Red")
             return TrafficLight.RED
 
         if best_label == "yellow":
+            # print("Yellow")
             return TrafficLight.YELLOW
 
+        # print("UNKNOWN")
         return TrafficLight.UNKNOWN
 
 
@@ -99,35 +106,19 @@ class TLClassifier(object):
 
 
 
+# Check the Inference time with a givern image
 
+'''
+import timeit
+TLC = TLClassifier()
+image = "/home/user/Desktop/Test2.png"
+image_read = cv2.imread(image)
+converted_image = cv2.cvtColor(image_read, cv2.COLOR_RGB2BGR)
 
+start = timeit.default_timer()
+classification = TLC.get_classification(converted_image)
+end = timeit.default_timer()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("Inference time: ", end - start)
+print("Classification: ", classification)
+'''

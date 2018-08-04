@@ -24,6 +24,7 @@ class TLDetector(object):
         self.lights = []
         self.waypoint_tree = None
         self.waypoints_2d = None
+        self.throw_image = False
 
         sub1 = rospy.Subscriber('/current_pose', PoseStamped, self.pose_cb)
         sub2 = rospy.Subscriber('/base_waypoints', Lane, self.waypoints_cb)
@@ -123,7 +124,6 @@ class TLDetector(object):
         # For Testing, we put the Groundtruth state of the simulator
         #return light.state
 
-
         if(not self.has_image):
             self.prev_light_loc = None
             return False
@@ -132,7 +132,6 @@ class TLDetector(object):
 
         #Get classification
         return self.light_classifier.get_classification(cv_image)
-
 
     def process_traffic_lights(self):
         """Finds closest visible traffic light, if one exists, and determines its
