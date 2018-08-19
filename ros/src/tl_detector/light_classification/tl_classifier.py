@@ -108,8 +108,9 @@ class TLClassifier(object):
 
 # Check the Inference time with a givern image
 
-'''
+
 import timeit
+'''
 TLC = TLClassifier()
 image = "/home/user/Desktop/Test2.png"
 image_read = cv2.imread(image)

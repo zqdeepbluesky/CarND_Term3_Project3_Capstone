@@ -117,7 +117,7 @@ class WaypointUpdater(object):
 
             stop_idx = max(self.stopline_wp_idx - closest_idx - 2, 0) # In order to avoid the center of the car be on the traffic line
             dist = self.distance(waypoints, i, stop_idx)
-            vel = math.sqrt(2 * MAX_DECEL * dist)
+            vel = dist - math.sqrt(2 * MAX_DECEL * dist) #
             if vel < 1.0:
                 vel = 0.0
 

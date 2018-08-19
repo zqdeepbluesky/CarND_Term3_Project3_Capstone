@@ -63,7 +63,7 @@ class DBWNode(object):
         rospy.Subscriber('/twist_cmd',           TwistStamped, self.twist_cb)
         rospy.Subscriber('/vehicle/dbw_enabled', Bool,         self.dbw_enabled_cb)
 
-        self.dbw_enabled = None
+        self.dbw_enabled = False
         self.linear_vel = None
         self.angular_vel = None
         self.current_vel = None

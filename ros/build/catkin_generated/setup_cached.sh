@@ -9,7 +9,6 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/devel/lib:$LD_LIBRARY_PATH"
-export PATH="/opt/ros/kinetic/bin:$/usr/local/lib/python3.5:/home/user/.local/share/umake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 export PKG_CONFIG_PATH="/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/build"
 export PYTHONPATH="/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/devel/lib/python2.7/dist-packages:$PYTHONPATH"
