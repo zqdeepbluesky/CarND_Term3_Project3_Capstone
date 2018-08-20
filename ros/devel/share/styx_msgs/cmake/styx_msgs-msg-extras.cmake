@@ -1,2 +1,0 @@
-set(styx_msgs_MESSAGE_FILES "/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/src/styx_msgs/msg/TrafficLight.msg;/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/src/styx_msgs/msg/TrafficLightArray.msg;/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/src/styx_msgs/msg/Waypoint.msg;/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/src/styx_msgs/msg/Lane.msg")
-set(styx_msgs_SERVICE_FILES "")

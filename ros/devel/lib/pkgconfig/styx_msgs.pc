@@ -1,8 +1,0 @@
-prefix=/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/devel
-
-Name: styx_msgs
-Description: Description of styx_msgs
-Version: 0.0.0
-Cflags: -I/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/devel/include
-Libs: -L/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/devel/lib 
-Requires: 

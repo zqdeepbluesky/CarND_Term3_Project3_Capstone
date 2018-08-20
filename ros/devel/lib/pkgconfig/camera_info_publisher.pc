@@ -1,8 +1,0 @@
-prefix=/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/devel
-
-Name: camera_info_publisher
-Description: Description of camera_info_publisher
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/user/Abdou/CarND-Term3/CarND_Term3_Project3_Capstone/ros/devel/lib 
-Requires: 
