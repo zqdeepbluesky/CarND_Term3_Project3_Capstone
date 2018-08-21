@@ -9,6 +9,7 @@ import rospy
 class TLClassifier(object):
     def __init__(self):
         #TODO load classifier
+        os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
         dir_path = os.path.dirname(os.path.realpath(__file__))
         model_file = dir_path + "/Model.pb"
         input_name  = "import/input_1"
