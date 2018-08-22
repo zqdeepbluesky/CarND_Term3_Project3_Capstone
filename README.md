@@ -57,7 +57,7 @@ A fine-tuned MobileNet (https://arxiv.org/pdf/1704.04861.pdf) is offered a good 
 
 The vehicle is oving Normally on the Simulator:
 
-![alt text](imgs/Move.png  "Move Normally")
+![alt text](imgs/move.png  "Move Normally")
 
 The vehicle is able to decelerate if the traffic light is RED:
 
